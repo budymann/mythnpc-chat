@@ -1,0 +1,8 @@
+services:
+  mythnpc-rabbitmq:
+    container_name: mythnpc-rabbitmq
+    image: mythnpc/rabbitmq
+    ports:
+      - "8080:15672"
+      - "5672:5672"
+      - "61613:61613"
